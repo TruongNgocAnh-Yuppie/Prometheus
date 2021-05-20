@@ -5,8 +5,6 @@
 ### Network: 
 - Thông số lấy từ VM 
 
-![2]()
-
 ###### Input
 
 ![1](../image/2021-05-19_17-35-48.png)
@@ -16,16 +14,17 @@
 
 
 ### Disk 
-
+- node_filesystem_size{mountpoint="/"}
 ###### Used
-
+- node_filesystem_size{mountpoint="/"} - node_filesystem_free{mountpoint="/"}
 ###### Available
-
+- node_filesystem_free{mountpoint="/"}
 
 ### RAM
-
+- node_memory_MemTotal
 ###### Free
-
+- node_memory_MemFree
 ###### Used
-
+- node_memory_MemTotal - node_memory_MemFree
 ### CPU
+- 
